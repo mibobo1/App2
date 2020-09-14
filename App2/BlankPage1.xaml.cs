@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,17 @@ namespace App2
         public BlankPage1()
         {
             this.InitializeComponent();
+            KeyboardAccelerator GoBack = new KeyboardAccelerator();
+            GoBack.Key = VirtualKey.GoBack;
+            GoBack.Invoked += BackInvoked;
+            KeyboardAccelerator AltLeft = new KeyboardAccelerator();
+            AltLeft.Key = VirtualKey.Left;
+            AltLeft.Invoked += BackInvoked;
+            this.KeyboardAccelerators.Add(GoBack);
+            this.KeyboardAccelerators.Add(AltLeft);
+            // ALT routes here
+            AltLeft.Modifiers = VirtualKeyModifiers.Menu;
+
         }
 
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
@@ -32,17 +44,41 @@ namespace App2
             this.Frame.Navigate(typeof(MainPage));
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        //protected override void OnNavigatedTo(NavigationEventArgs e)
+        //{
+        //    back_button.IsEnabled = this.Frame.CanGoBack;
+
+        //    if (e.Parameter is string && !string.IsNullOrWhiteSpace((string)e.Parameter))
+        //    {
+        //        greeting.Text = $"HI,{e.Parameter}";
+        //    }
+        //    else
+        //    {
+        //        greeting.Text = "Hi!";
+        //    }
+        //    base.OnNavigatedTo(e);
+        //}
+
+        private void back_button_Click(object sender, RoutedEventArgs e)
         {
-            if(e.Parameter is string && !string.IsNullOrWhiteSpace((string)e.Parameter))
+            On_BackRequested();
+        }
+
+        // Handles system-level BackRequested events and page-level back button Click events
+        private bool On_BackRequested()
+        {
+            if (this.Frame.CanGoBack)
             {
-                greeting.Text = $"HI,{e.Parameter.ToString()}";
+                this.Frame.GoBack();
+                return true;
             }
-            else
-            {
-                greeting.Text = "Hi!";
-            }
-            base.OnNavigatedTo(e);
+            return false;
+        }
+
+        private void BackInvoked(KeyboardAccelerator sender, KeyboardAcceleratorInvokedEventArgs args)
+        {
+            On_BackRequested();
+            args.Handled = true;
         }
     }
 }

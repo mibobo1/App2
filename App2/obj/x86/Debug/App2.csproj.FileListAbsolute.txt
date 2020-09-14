@@ -48,3 +48,7 @@ D:\xuhaifeng\App2\App2\obj\x86\Debug\qualifiers.txt.intermediate
 D:\xuhaifeng\App2\App2\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 D:\xuhaifeng\App2\App2\obj\x86\Debug\ProjectArchitectures.txt
 D:\xuhaifeng\App2\App2\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885022160000000.json
+D:\xuhaifeng\App2\App2\obj\x86\Debug\BlankPage2.g.i.cs
+D:\xuhaifeng\App2\App2\obj\x86\Debug\BlankPage2.g.cs
+D:\xuhaifeng\App2\App2\obj\x86\Debug\BlankPage2.xaml
+D:\xuhaifeng\App2\App2\obj\x86\Debug\BlankPage2.xbf

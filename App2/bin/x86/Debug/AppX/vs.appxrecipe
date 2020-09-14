@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\xuhaifeng\App2\App2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-07-16T07:58:42.038</Modified>
+      <Modified>2020-07-17T02:58:30.772</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\xuhaifeng\App2\App2\bin\x86\Debug\App2.exe">
       <PackagePath>entrypoint\App2.exe</PackagePath>
-      <Modified>2020-07-16T07:58:41.521</Modified>
+      <Modified>2020-07-17T02:58:30.294</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -86,19 +86,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\xuhaifeng\App2\App2\bin\x86\Debug\App2.xr.xml">
       <PackagePath>App2.xr.xml</PackagePath>
-      <Modified>2020-07-16T07:57:10.206</Modified>
+      <Modified>2020-07-17T02:45:35.504</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\xuhaifeng\App2\App2\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-07-16T07:58:41.381</Modified>
+      <Modified>2020-07-17T02:58:30.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\xuhaifeng\App2\App2\bin\x86\Debug\BlankPage1.xbf">
       <PackagePath>BlankPage1.xbf</PackagePath>
-      <Modified>2020-07-16T07:58:41.381</Modified>
+      <Modified>2020-07-17T02:58:30.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\xuhaifeng\App2\App2\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-07-16T07:58:41.381</Modified>
+      <Modified>2020-07-17T02:58:30.122</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -110,7 +110,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\xuhaifeng\App2\App2\bin\x86\Debug\Core\App2.exe">
       <PackagePath>App2.exe</PackagePath>
-      <Modified>2020-07-16T07:58:42.033</Modified>
+      <Modified>2020-07-17T02:58:30.766</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

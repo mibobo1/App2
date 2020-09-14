@@ -9,13 +9,36 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="BackButton" Click="BackButton_Click" Style="{StaticResource NavigationBackButtonNormalStyle}"/>
+        <StackPanel VerticalAlignment="Center" Grid.Row="1">
             <TextBlock HorizontalAlignment="Center" Text="Enter your name"></TextBlock>
             <TextBox HorizontalAlignment="Center" Name="name" Width="200"></TextBox>
             <HyperlinkButton Content="Click go to page1"
                              Click="HyperlinkButton_Click"
                              HorizontalAlignment="Center"/>
-        </StackPanel>
+            <Button Content="Subscribe" Click="SubscribeButton_Click"/>
 
+            <Button  Click="SubscribeButton_Click"
+                     Background="LightGray"
+                     Height="100"
+                     Width="80">
+                <StackPanel>
+                    <Image Source="Assets/StoreLogo.png" Height="62"/>
+                    <TextBlock Text="Photos" Foreground="Black"
+                               HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <RepeatButton Width="100" Delay="500" Interval="100" Click="Increase_Click">Increase</RepeatButton>
+            <RepeatButton Width="100" Delay="500" Interval="100" Click="Decrease_Click">Decrease</RepeatButton>
+            <TextBlock x:Name="clickTextBlock" Text="Number of Clicks:" />
+
+     
+        </StackPanel>
     </Grid>
 </Page>

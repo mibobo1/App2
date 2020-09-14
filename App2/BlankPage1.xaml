@@ -8,13 +8,14 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+   
+
+
+  
+
+
     <Grid>
-        <StackPanel VerticalAlignment="Center">
-            <TextBlock HorizontalAlignment="Center" Name="greeting"/>
-            <HyperlinkButton HorizontalAlignment="Center"
-                             Content="Click to go to MainPage"
-                             Click="HyperlinkButton_Click"/>
-        </StackPanel>
+      
 
     </Grid>
 </Page>
